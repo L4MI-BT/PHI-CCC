@@ -1,8 +1,7 @@
 {
-    "name": "utilisateur/phi-ccc",
     "autoload": {
         "psr-4": {
-            "Utilisateur\\PhiCcc\\": "src/"
+            "PhiCcc\\": "src/"
         }
     },
     "require": {}

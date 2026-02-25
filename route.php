@@ -1,6 +1,6 @@
 <?php
 
-use Controllers\GlobalController;
+use PhiCcc\Controller\GlobalController;
 
 function call($controller, $method) {
     switch($controller) {
