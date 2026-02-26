@@ -52,6 +52,11 @@ class GlobalController {
         require_once __DIR__ . '/../Views/public/contact.php';
     }
 
+    public function mentionLegal()
+    {
+        require_once __DIR__ . '/../Views/public/mentionLegal.php';
+    }
+
 
 
     // public function actualite()
