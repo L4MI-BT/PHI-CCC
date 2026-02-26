@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "inter";
   src: url(../../fonts/static/Inter_18pt-Light.ttf);
@@ -12,8 +13,353 @@ body {
   box-sizing: border-box;
 }
 
+.topbar {
+  background: #00684C;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.82rem;
+  padding: 5px 0;
+}
+
+.topbar a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.topbar a:hover {
+  color: #00684C;
+}
+
+/* ── NAVBAR ── */
+.main-nav {
+  background: #b4d499;
+  border-bottom: 3px solid #b4d499;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Checkbox hidden — powers the hamburger */
+#menu-toggle {
+  display: none;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: stretch;
+  height: 68px;
+}
+
+/* ── LOGO ── */
+.nav-brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #a39799 !important;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+}
+
+.nav-brand span {
+  color: #111;
+}
+
+/* ── NAV LINKS ── */
+.nav-links {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links > li > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -3px;
+  transition: color 0.2s, border-color 0.2s;
+  gap: 4px;
+}
+
+.nav-links > li > a:hover {
+  color: #00684C;
+  border-bottom-color: #00684C;
+}
+
+.chevron {
+  width: 10px;
+  height: 10px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  transition: transform 0.25s;
+}
+
+.nav-links > li:hover > a .chevron {
+  transform: rotate(180deg);
+}
+
+/* ── DROPDOWN ── */
+.dropdown-panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+  background: #fff;
+  border-top: 3px solid #00684C;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 0.6rem 0;
+  z-index: 1050;
+}
+
+.nav-links > li:hover > .dropdown-panel {
+  display: block;
+}
+
+.dropdown-panel a {
+  display: block;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.dropdown-panel a:hover {
+  color: #00684C;
+  border-left-color: #00684C;
+  background: #fdf0f2;
+  padding-left: 1.8rem;
+}
+
+.dropdown-panel hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 0.4rem 1.4rem;
+}
+
+/* ── BOUTON DON ── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.btn-don {
+  background: #d8007e;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.4rem;
+  border-radius: 3px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-don:hover {
+  background: #ffeef0;
+  transform: translateY(-1px);
+}
+
+/* ── HAMBURGER LABEL ── */
+.hamburger-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: auto;
+  align-self: center;
+}
+
+.hamburger-label span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #111;
+  transition: all 0.3s;
+  transform-origin: center;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 991px) {
+  .topbar {
+    display: none;
+  }
+  .nav-inner {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .hamburger-label {
+    display: flex;
+  }
+  /* Animate hamburger when open */
+  #menu-toggle:checked ~ .nav-inner .hamburger-label span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  #menu-toggle:checked ~ .nav-inner .hamburger-label span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .nav-inner .hamburger-label span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  /* Hidden by default, shown when checked */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  #menu-toggle:checked ~ .nav-inner .nav-links {
+    display: flex;
+  }
+  .nav-links > li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links > li > a {
+    height: auto;
+    padding: 0.75rem 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    outline: none;
+  }
+  /* Dropdowns open on focus-within (tap on mobile) */
+  .dropdown-panel {
+    position: static;
+    display: none;
+    border-top: none;
+    border-left: 3px solid #00684C;
+    box-shadow: none;
+    margin-left: 1rem;
+    padding: 0.2rem 0;
+    width: calc(100% - 1rem);
+  }
+  .nav-links > li:focus-within > .dropdown-panel {
+    display: block;
+  }
+  .nav-actions {
+    display: none;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-top: 1px solid #eee;
+  }
+  #menu-toggle:checked ~ .nav-inner .nav-actions {
+    display: flex;
+  }
+}
+/* HERO */
+.hero {
+  background-image: url("../Images/BACKGROUND.png");
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 80px;
+  bottom: -120px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-label {
+  display: inline-block;
+  background: #d8007e;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.35rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  color: rgb(170, 36, 36);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  max-width: 600px;
+}
+
+.hero-sub {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin-top: 1rem;
+}
+
+.btn-hero {
+  background: rgb(103, 42, 42);
+  color: var(--vert-fonce);
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  margin-top: 1.75rem;
+  transition: all 0.2s;
+}
+
+.btn-hero:hover {
+  background: var(--jaune);
+  color: #1a1a1a;
+}
+
+.nav-brand {
+  margin-top: 20px;
+}
+
 .bg-footer {
   background-image: url(../Images/template_diaprama2-02.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.flexfoot {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
