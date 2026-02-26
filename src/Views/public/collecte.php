@@ -1,6 +1,6 @@
 <div class="m-5">
     <div class="container">
-        <h1 class="m-5 text-center">LES POINTS DE COLLECTE</h1>
+        <h2 class="m-5 text-center">LES POINTS DE COLLECTE</h2>
         <div class="row">
             <div class="col-lg-8 offset-2">
                 <div>

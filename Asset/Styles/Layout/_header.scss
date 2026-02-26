@@ -63,7 +63,7 @@
       padding: 0 1.1rem;
       font-size: 0.95rem;
       font-weight: 600;
-      color: #111;
+      color: #00684C;
       text-decoration: none;
       white-space: nowrap;
       border-bottom: 3px solid transparent;
@@ -86,7 +86,7 @@
       position: absolute;
       top: 100%; left: 0;
       min-width: 230px;
-      background: #fff;
+      background: #fffdee;
       border-top: 3px solid variables.$vert-fonce;
       box-shadow: 0 8px 24px rgba(0,0,0,.12);
       padding: 0.6rem 0;
@@ -99,7 +99,7 @@
       padding: 0.6rem 1.4rem;
       font-size: 0.9rem;
       font-weight: 500;
-      color: #222;
+      color: #00684C;
       text-decoration: none;
       border-left: 3px solid transparent;
       transition: all .15s;
@@ -124,16 +124,22 @@
     }
     .btn-don {
       background: variables.$rose;
-      color: #fff !important;
-      font-weight: 700;
-      font-size: 0.9rem;
+      color: #fffdee !important;
+      font-weight: 400;
+      font-family: 'impact';
+      font-size: 2.9rem;
       padding: 0.5rem 1.4rem;
       border-radius: 3px;
       text-decoration: none;
       white-space: nowrap;
       transition: background .2s, transform .15s;
     }
-    .btn-don:hover { background: #ffeef0; transform: translateY(-1px); }
+
+    .btn-don:hover {
+        background: #ffeef0;
+        color: #d8007e !important;
+
+    }
 
     /* ── HAMBURGER LABEL ── */
     .hamburger-label {
@@ -225,8 +231,9 @@
     }
     /* HERO */
     .hero {
-      background-image: url("../Images/BACKGROUND.png");
-      min-height: 420px;
+      background-image: url("../Images/BACKGROUND_2.png");
+      background-position: 80%;
+      min-height: 600px;
       display: flex;
       align-items: center;
       position: relative;
@@ -249,43 +256,20 @@
       background: rgba(255,255,255,0.04);
     }
     .hero-label {
-      display: inline-block;
       background:variables.$rose;
-      color: #1a1a1a;
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 0.35rem 1rem;
+      color: #fffdee;
+      font-weight: 400;
+      font-size: 4.95rem;
+      padding: 0 15px;
       border-radius: 4px;
-      margin-bottom: 1rem;
-      letter-spacing: 0.03em;
+
     }
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      color: rgb(170, 36, 36);
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      line-height: 1.1;
-      max-width: 600px;
+    .hero{
+        h1, h2{
+            color: #fffdee;
+        }
     }
-    .hero-sub {
-      color: rgba(255,255,255,0.75);
-      font-size: 1.1rem;
-      max-width: 480px;
-      margin-top: 1rem;
-    }
-    .btn-hero {
-      background: rgb(103, 42, 42);
-      color: var(--vert-fonce);
-      font-weight: 600;
-      border: none;
-      padding: 0.75rem 2rem;
-      border-radius: 6px;
-      margin-top: 1.75rem;
-      transition: all 0.2s;
-    }
-    .btn-hero:hover {
-      background: var(--jaune);
-      color: #1a1a1a;
-    }
+
     .nav-brand{
         margin-top: 20px;
     }
