@@ -64,7 +64,7 @@
     <?php require_once "route.php"; ?>
     <a href="?controller=Asso&method=list">Liste</a>
 </main>
-<footer>
+<footer class="bg-footer">
     <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
         <li class="nav-item">
             <a class="nav-link" href="https://www.facebook.com/profile.php?id=100064819986030">
@@ -72,11 +72,61 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="instagram.com">
-                <img src="./asset/img/instagram-brands-solid-full.svg" alt="rfrf" height="22px">
+            <a class="nav-link" href="">
+                <img src="./Asset/Images/facebook.svg" alt="rfrf" height="22px">
             </a>
         </li>
     </ul>
+    <div class="bandeau">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Menu principal</h5>
+                    <ul>
+                        <li>
+                            <a class="text-reset text-decoration-none" href="?controller=global&method=index">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="text-reset text-decoration-none" href="?controller=global&method=enBref">Qui somme-nous ?</a>
+                        </li>
+                        <li>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nous Soutenir</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="?controller=global&method=dons">Dons</a></li>
+                                <li><a class="dropdown-item" href="?controller=global&method=collecte">Collecte</a></li>
+                                <li><a class="dropdown-item" href="?controller=global&method=boutique">Boutique</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nous Soutenir</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="?controller=global&method=benevol">Devenir Benevol</a></li>
+                                <li><a class="dropdown-item" href="?controller=global&method=assos">Nos Associations</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="text-reset text-decoration-none" href="?controller=global&method=mission">Nos Misions</a>
+                        </li>
+                        <li>
+                            <a class="text-reset text-decoration-none" href="?controller=global&method=contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Information</h5>
+                    <ul>
+                        <li>
+                            <a class="text-reset text-decoration-none" href="?controller=global&method=mentionLegal">Mention légal</a>
+                        </li>
+                        <li>
+                            <a class="text-reset text-decoration-none" href="#">Politique de confidentialité</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">Copyright ISFAC</div>
+    </div>
 </footer>
 <script src="Asset/Js/script.js"></script>
 <script src="Asset/Js/bootstrap.bundle.js"></script>

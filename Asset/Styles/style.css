@@ -3,11 +3,17 @@
   src: url(../../fonts/static/Inter_18pt-Light.ttf);
   font-weight: 300;
 }
-html {
+body {
   font-family: "inter";
   font-weight: 300;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.bg-footer {
+  background-image: url(../Images/template_diaprama2-02.jpg);
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
