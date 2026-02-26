@@ -1,11 +1,15 @@
 <?php
 
+use PhiCcc\Controller\AssoController;
 use PhiCcc\Controller\GlobalController;
 
 function call($controller, $method) {
     switch($controller) {
         case 'global':
             $controllerObj = new GlobalController();
+            break;
+        case'asso':
+            $controllerObj = new AssoController();
             break;
         default:
             $controllerObj = new GlobalController();

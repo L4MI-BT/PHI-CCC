@@ -1,8 +1,9 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
-// require_once __DIR__."/../shared/core/Database.php";
+require_once __DIR__."/src/Database/connexion.php";
 
-// -------------------------------------------REQO Layout----------------------------------------------------
+
 
 require_once "src/Views/layout.php";
+?>
