@@ -566,9 +566,259 @@ h1, h2, h3, h4, h5 {
   color: #2d7a52;
 }
 
-.box {
+.card {
+  background: #fffdee;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  animation: fadeUp 0.6s ease both;
+  margin: 0 auto;
+}
+
+/* Header */
+.card-header {
   background: #b4d499;
-  padding: 15px;
+  padding: 36px 40px 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header::after {
+  content: "♥";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 80px;
+  opacity: 0.06;
+  line-height: 1;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "inter";
+  font-weight: 300;
+  position: relative;
+  transition: color 0.2s;
+  background: #b4d499;
+}
+
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--green);
+  border-radius: 3px 3px 0 0;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+.tab-btn.active {
+  color: var(--ink);
+}
+
+.tab-btn.active::after {
+  transform: scaleX(1);
+}
+
+/* Panels */
+.tab-panel {
+  display: none;
+  padding: 36px 40px;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ---- COURRIER PANEL ---- */
+.info-box {
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+}
+.info-box h3 {
+  color: #00684C;
+}
+
+.info-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-box ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #00684C;
+  line-height: 1.5;
+}
+
+.info-box ul li::before {
+  content: "→";
+  color: var(--green);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* ---- HELLOASSO PANEL ---- */
+.helloasso-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.helloasso-intro p {
+  font-size: 0.9rem;
+  color: #00684C;
+  max-width: 380px;
+  line-height: 1.6;
+}
+
+.iframe-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #f9f9f9;
+  position: relative;
+}
+
+.iframe-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 360px;
+  text-align: center;
+  padding: 20px;
+}
+
+.iframe-placeholder .ha-logo {
+  font-size: 2.5rem;
+}
+
+.iframe-placeholder h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+}
+
+.iframe-placeholder p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  max-width: 340px;
+  line-height: 1.6;
+}
+
+.iframe-placeholder code {
+  font-size: 0.78rem;
+  background: #f0f0f0;
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: #555;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 28px 0;
+}
+
+.visit-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: #b4d499;
+  border: 1px solid;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #00684C;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.visit-link:hover {
+  background: #00684C;
+  color: #b4d499;
+}
+
+.visit-link .link-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--green);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.visit-link .link-text strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.visit-link .link-text span {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.visit-link .arrow {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 1.2rem;
 }
 
 .bg-footer {

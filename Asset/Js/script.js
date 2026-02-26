@@ -85,4 +85,13 @@ function afficherCodePostal(arr) {
     elresult.appendChild(div);
   });
 }
-//--------------------------------------//
+//--------------------------------------DONS--------------
+ function switchTab(name, btn) {
+    // Masquer tous les panels et désactiver tous les boutons
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+    // Activer le bon
+    document.getElementById('panel-' + name).classList.add('active');
+    btn.classList.add('active');
+  }
