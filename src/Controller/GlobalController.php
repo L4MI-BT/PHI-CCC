@@ -39,7 +39,7 @@ class GlobalController {
 
     public function assos()
     {
-        require_once __DIR__ . '/../Views/public/index.php';
+        require_once __DIR__ . '/../Views/public/assos.php';
     }
 
     public function mission()

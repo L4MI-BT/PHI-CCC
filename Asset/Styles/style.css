@@ -1,15 +1,52 @@
 @font-face {
   font-family: "inter";
-  src: url(../../fonts/static/Inter_18pt-Light.ttf);
+  src: url(../fonts/static/Inter_18pt-Light.ttf);
   font-weight: 300;
+}
+@font-face {
+  font-family: "impact";
+  src: url(../fonts/Impact.ttf);
+  font-weight: 400;
 }
 body {
   font-family: "inter";
   font-weight: 300;
+  background-color: #fffdee;
+  color: #00684C;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "impact";
+  font-weight: 400;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #b4d499 ;
+  --bs-btn-border-color: #b4d499;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #00684C;
+  --bs-btn-hover-border-color: #00684C;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: variable.$vert-fonc;
+  --bs-btn-active-border-color: #00684C;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #b4d499;
+  --bs-btn-disabled-border-color: #b4d499;
+}
+
+.form-control:focus {
+  color: #00684C;
+  background-color: #fffdee;
+  border-color: rgba(0, 104, 76, 0.4941176471);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 104, 76, 0.6549019608);
 }
 
 .bg-footer {

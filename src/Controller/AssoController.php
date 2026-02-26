@@ -5,11 +5,14 @@ use PhiCcc\Model\Asso;
 use PhiCcc\Model\ManagerAsso;
 
 class AssoController{
+
+
     public function list(){
         $asso = new ManagerAsso;
-        $list_asso = $asso->all();
-        require_once __DIR__ . '/../Views/asso/list_asso.php';
+        $liste_assos = $asso->all();
+        require_once __DIR__ . '/../Views/public/assos.php';
     }
+
     public function insert(){
         require_once __DIR__.'/../Views/asso/ajout_form.php';
     }
@@ -35,8 +38,9 @@ class AssoController{
     }
 
     public function search(){
-        require_once __DIR__.'/../Views/collecte/form_search.php';
+        require_once __DIR__.'/../Views/public/collecte.php';
     }
+
     public function recherche(){
         $asso = new ManagerAsso;
         $departement = $asso->local($_POST["ville"]);

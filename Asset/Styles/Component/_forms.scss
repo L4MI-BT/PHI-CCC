@@ -1,0 +1,9 @@
+@use '../Common/variables';
+
+.form-control:focus {
+  color: #00684C;
+  background-color: #fffdee;
+  border-color: #00684c7e;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #00684ca7;
+}

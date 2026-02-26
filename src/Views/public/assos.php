@@ -1,10 +1,9 @@
 <div class="m-5">
     <div class="container">
-        <h1 class="m-5 text-center">LES POINTS DE COLLECTE</h1>
+        <h1 class="m-5 text-center">NOS ASSOCIATIONS</h1>
         <div class="row">
             <div class="col-lg-8 offset-2">
                 <div>
-                    <h3 class="mb-2 mt-2 text center">POURQUOI DONNER VOTRE MATERIEL MEDICALE ?</h3>
                     <P class="m-1">
                         Chez <strong>Pharmacie Humanitaire Internationale (PHI)</strong>, l’autre volet majeur de notre action repose sur <strong>la collecte, le tri, la réhabilitation et la réutilisation du matériel médical. <br> Nous récupérons notamment: </strong>
                     </P>
@@ -51,3 +50,11 @@
     </div>
 </div>
 
+
+<?php
+
+    foreach ($liste_assos as $info) { ?>
+        <p><?= $info->getNom_asso(); ?></p>
+    <?php }?>
+
+   

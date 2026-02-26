@@ -31,7 +31,7 @@ class UserController {
         setcookie('login', '', -1);
         unset($_COOKIE['login']);
 
-        header('Location: ?controller=pages&method=index');
+        header('Location: ?controller=global&method=index');
         exit;
     }
 

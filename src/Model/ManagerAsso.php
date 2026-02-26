@@ -6,13 +6,14 @@ use PhiCcc\Database\Db;
 use PhiCcc\Model\Asso;
 
 class ManagerAsso{
-    public function all(){
+
+    public static function all(){
         $list=[];
         $db= Db::getInstance();
         $req = $db->query("SELECT * FROM association");
 
         foreach ($req->fetchAll(PDO::FETCH_ASSOC) as $asso){
-            $list[]=new Asso($asso);
+            $list[] = new Asso($asso);
         }
         return $list;
     }

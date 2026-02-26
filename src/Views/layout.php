@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHI (Pharmacie Humanitaire Internationnal)</title>
-    <link rel="stylesheet" href="Asset/Styles/style.css">
+    <link rel="shortcut icon" href="Asset/Images/FAVICON.svg" type="image/x-icon">
     <link rel="stylesheet" href="Asset/Styles/bootstrap.css">
+    <link rel="stylesheet" href="Asset/Styles/style.css">
 </head>
 <body>
     <?php session_start(); ?>
@@ -37,7 +38,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nous Rejoindre</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="?controller=global&method=benevol">Devenir Benevol</a></li>
-                                    <li><a class="dropdown-item" href="?controller=global&method=assos">Nos Associations</a></li>
+                                    <li><a class="dropdown-item" href="?controller=asso&method=list">Nos Associations</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -62,7 +63,6 @@
 </header>
 <main>
     <?php require_once "route.php"; ?>
-    <a href="?controller=Asso&method=list">Liste</a>
 </main>
 <footer class="bg-footer">
     <ul class="navbar-nav mb-2 mb-lg-0 ms-5">
@@ -101,7 +101,7 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nous Soutenir</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="?controller=global&method=benevol">Devenir Benevol</a></li>
-                                <li><a class="dropdown-item" href="?controller=global&method=assos">Nos Associations</a></li>
+                                <li><a class="dropdown-item" href="?controller=assos&method=list">Nos Associations</a></li>
                             </ul>
                         </li>
                         <li>

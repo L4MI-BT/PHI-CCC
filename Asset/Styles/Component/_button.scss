@@ -1,0 +1,18 @@
+@use '../Common/variables';
+
+.btn-success{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #b4d499 ;
+  --bs-btn-border-color: #b4d499;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #00684C;
+  --bs-btn-hover-border-color: #00684C;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: variable.$vert-fonc;
+  --bs-btn-active-border-color: #00684C;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #b4d499;
+  --bs-btn-disabled-border-color: #b4d499;
+}
