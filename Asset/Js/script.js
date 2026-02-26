@@ -16,7 +16,7 @@ elcodepostal.addEventListener("input", function () {
     };
 
 let xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", `./models/autocompletion.php?codepostal=${valInput}`, true);
+xmlhttp.open("GET", `/PHI-CCC/src/Database/autocompletion.php?codepostal=${valInput}`, true);
 
 xmlhttp.onreadystatechange = function () {
     if (this.readyState === 4 && this.status === 200) {
@@ -33,11 +33,11 @@ function afficherVilles(arr) {
     
     arr.forEach(element => {
         let div = document.createElement("div");
-        div.textContent = `${element.nom_ville} ${element.code_postal}`
+        div.textContent = `${element.ville} ${element.code_postal}`
 
         div.addEventListener("click", function () {
             elcodepostal.value = element.code_postal;
-            elVilleInput.value = element.nom_ville; 
+            elVilleInput.value = element.ville; 
             elDepartement.value = element.departement;
             elId_ville.value = element.id_ville;
             elresult.innerHTML = "";
@@ -56,7 +56,7 @@ elVilleInput.addEventListener("input", function () {
     return;
   };
         let xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET",`./models/autocompletion.php?ville=${valInput}`, true);
+        xmlhttp.open("GET", `/PHI-CCC/src/Database/autocompletion.php?ville=${valInput}`, true);
         
         xmlhttp.onreadystatechange = function () {
             
@@ -72,11 +72,11 @@ function afficherCodePostal(arr) {
   elresult.innerHTML = "";
     arr.forEach(element => {
         let div = document.createElement("div");
-        div.textContent = `${element.nom_ville} ${element.code_postal}`;
+        div.textContent = `${element.ville} ${element.code_postal}`;
         
         div.addEventListener("click", function () {
             elcodepostal.value = element.code_postal;
-            elVilleInput.value = element.nom_ville; 
+            elVilleInput.value = element.ville; 
             elDepartement.value = element.departement;
             elId_ville.value = element.id_ville;
             elresult.innerHTML = "";

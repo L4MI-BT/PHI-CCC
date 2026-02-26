@@ -3,6 +3,7 @@
 namespace PhiCcc\Model;
 
     class Asso{
+        private $nom_asso;
         private $id_asso;
         private $presidents;
         private $vice_president;
@@ -34,11 +35,11 @@ namespace PhiCcc\Model;
                 }
             }
         }
-        public function getId_Asso()
+        public function getId_asso()
         {
                 return $this->id_asso;
         }
-        public function setId_Asso($id_asso): self
+        public function setId_asso($id_asso): self
         {
                 $this->id_asso = $id_asso;
 
@@ -56,11 +57,11 @@ namespace PhiCcc\Model;
                 return $this;
         }
 
-        public function getVice_President()
+        public function getVice_president()
         {
                 return $this->vice_president;
         }
-        public function setVice_President($vice_president): self
+        public function setVice_president($vice_president): self
         {
                 $this->vice_president = $vice_president;
 
@@ -78,12 +79,12 @@ namespace PhiCcc\Model;
                 return $this;
         }
 
-        public function getVice_Tresorier()
+        public function getVice_tresorier()
         {
                 return $this->vice_tresorier;
         }
 
-        public function setVice_Tresorier($vice_tresorier): self
+        public function setVice_tresorier($vice_tresorier): self
         {
                 $this->vice_tresorier = $vice_tresorier;
 
@@ -101,11 +102,11 @@ namespace PhiCcc\Model;
                 return $this;
         }
 
-        public function getVice_Secretaire()
+        public function getVice_secretaire()
         {
                 return $this->vice_secretaire;
         }
-        public function setVice_Secretaire($vice_secretaire): self
+        public function setVice_secretaire($vice_secretaire): self
         {
                 $this->vice_secretaire = $vice_secretaire;
 
@@ -167,14 +168,26 @@ namespace PhiCcc\Model;
                 return $this;
         }
 
-        public function getId_Ville()
+        public function getId_ville()
         {
                 return $this->id_ville;
         }
-        public function setId_Ville($id_ville): self
+        public function setId_ville($id_ville): self
         {
                 $this->id_ville = $id_ville;
 
                 return $this;
         }
+
+        public function getNom_asso()
+        {
+                return $this->nom_asso;
+        }
+        public function setNom_asso($nom_asso): self
+        {
+                $this->nom_asso = $nom_asso;
+
+                return $this;
+        }
     }
+    

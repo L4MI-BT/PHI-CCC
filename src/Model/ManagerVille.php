@@ -1,6 +1,9 @@
 <?php
+namespace PhiCcc\Model;
 
+use PDO;
 use PhiCcc\Database\Db;
+
 
 class ManagerVille{
 
@@ -17,7 +20,7 @@ class ManagerVille{
 
     public function autocompletionVille($ville){
         $db = Db::getInstance();
-        $requete=$db->prepare("SELECT * FROM ville WHERE nom_ville like :recherche LIMIT 0,10");
+        $requete=$db->prepare("SELECT * FROM ville WHERE ville like :recherche LIMIT 0,10");
         $requete->execute(['recherche'=>"$ville%"]);
         $info = $requete->fetchAll(PDO::FETCH_ASSOC);
         return $info;
