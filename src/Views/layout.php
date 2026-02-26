@@ -33,9 +33,9 @@
         <li class="mt-3">
             <a class="nav-brand" href="?controller=global&method=index">
         <?php if(isset($_SESSION['user'])){ ?>
-                    <a href="http://localhost/PHI-CCC/?controller=global&method=admin"><img src="./Asset/Images/logo.svg" width="80%"></a>
+                    <a href="http://localhost/PHI-CCC/?controller=global&method=admin"><img src="./Asset/Images/logo.svg" width="100%"></a>
                 <?php }else{?>
-                    <a href="http://localhost/PHI-CCC/?controller=global&method=index"><img src="./Asset/Images/logo.svg" width="80%"></a>
+                    <a href="http://localhost/PHI-CCC/?controller=global&method=index"><img src="./Asset/Images/logo.svg" width="100%"></a>
                 <?php } ?>
       </a>
         </li>
@@ -91,8 +91,6 @@
       <div class="col-lg-8">
         <p class="mb-2">AGIR POUR <span class="hero-label">L'ÉQUITÉ DES SOINS</span></p>
         <h1>ICI ET LÀ BAS.</h1>
-        <p class="hero-sub">Nous œuvrons pour un accès équitable aux soins de santé, partout dans le monde, sans distinction.</p>
-        <a href="#" class="btn btn-hero">Découvrir nos actions</a>
       </div>
     </div>
   </div>
