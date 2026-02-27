@@ -1,10 +1,14 @@
 <?php
 namespace PhiCcc\Controller;
 
+use PhiCcc\Model\ManagerActu;
+
 class GlobalController {
 
 
     public function index() {
+        $actu = new ManagerActu;
+        $liste_actus = $actu->all();
         require_once __DIR__ . '/../Views/public/index.php';
     }
 

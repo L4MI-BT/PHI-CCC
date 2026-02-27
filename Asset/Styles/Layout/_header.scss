@@ -133,6 +133,8 @@
       text-decoration: none;
       white-space: nowrap;
       transition: background .2s, transform .15s;
+      position: sticky;
+      top: 0;
     }
 
     .btn-don:hover {

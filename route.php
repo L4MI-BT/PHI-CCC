@@ -1,5 +1,6 @@
 <?php
 
+use PhiCcc\Controller\ActuController;
 use PhiCcc\Controller\AssoController;
 use PhiCcc\Controller\GlobalController;
 
@@ -10,6 +11,9 @@ function call($controller, $method) {
             break;
         case'asso':
             $controllerObj = new AssoController();
+            break;
+        case 'actu':
+            $controllerObj = new ActuController();
             break;
         default:
             $controllerObj = new GlobalController();

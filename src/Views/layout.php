@@ -63,12 +63,13 @@
                         </a>
                         <div class="dropdown-panel">
                             <a href="?controller=global&method=benevol">Devenir Bénévole</a>
-                            <a href="?controller=global&method=assos">Nos Associations</a>
+                            <a href="?controller=asso&method=list">Nos Associations</a>
+                            <a href="https://sphinx-manager-2.fr/Pharmacie-Huma-Inter-Clients" target="_blank">Espace Pharmacien</a>
                         </div>
                     </li>
 
                     <li>
-                        <a href="?controller=global&method=mission">Nos Missions</a>
+                        <a href="?controller=actu&method=list">Nos Missions</a>
                     </li>
 
                     <li>
@@ -81,7 +82,7 @@
                 <div class="nav-actions">
                     <a href="?controller=global&method=dons" class="btn-don">FAIRE UN DON</a>
                 </div>
-
+                
             </div><!-- /nav-inner -->
         </div><!-- /container -->
     </nav>
@@ -111,7 +112,7 @@
                             <a class="text-reset text-decoration-none" href="?controller=global&method=index">Accueil</a>
                         </li>
                         <li>
-                            <a class="text-reset text-decoration-none" href="?controller=global&method=enBref">Qui somme-nous ?</a>
+                            <a class="text-reset text-decoration-none" href="?controller=global&method=enBref">Qui sommes-nous ?</a>
                         </li>
                         <li>
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nous Soutenir</a>
@@ -129,7 +130,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="text-reset text-decoration-none" href="?controller=global&method=mission">Nos Misions</a>
+                            <a class="text-reset text-decoration-none" href="?controller=actu&method=list">Nos Misions</a>
                         </li>
                         <li>
                             <a class="text-reset text-decoration-none" href="?controller=global&method=contact">Contact</a>

@@ -88,34 +88,26 @@
 <section class="news-section">
   <div class="container">
     <h2 class="section-title">NOS <span>ACTUALITÉS</span></h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="news-card">
-          <div class="news-img">Image</div>
-          <div class="news-body">
-            <div class="news-title">Titre de l'actualité</div>
-            <a href="#" class="btn-news">Savoir +</a>
-          </div>
+    <div class="m-5">
+        <div class="row g-4">
+            <?php foreach($liste_actus as $items)
+                {?>
+                
+            <div class="col-lg-4">
+                <a href="?controller=actu&method=getactu&id=<?php echo $items->getId_actu() ?>" class="text-reset text-decoration-none">
+                    <div class="news-card">
+                        <img class="card-images" src="<?= $items->getUrl_Image() ?>" alt="">
+                        <h4 class="titre-asso text-center p-3">
+                            <?= $items->getTitre() ?>
+                        </h4>
+                        <p class="text-center">
+                            <?= $items->getDescription() ?>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <?php } ?>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="news-card">
-          <div class="news-img">Image</div>
-          <div class="news-body">
-            <div class="news-title">Titre de l'actualité</div>
-            <a href="#" class="btn-news">Savoir +</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="news-card">
-          <div class="news-img">Image</div>
-          <div class="news-body">
-            <div class="news-title">Titre de l'actualité</div>
-            <a href="#" class="btn-news">Savoir +</a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
