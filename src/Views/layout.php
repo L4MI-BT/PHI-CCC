@@ -136,7 +136,7 @@
                     <h5 class="text-uppercase">Information</h5>
                     <ul>
                         <li>
-                            <a class="text-reset text-decoration-none" href="?controller=global&method=mentionLegal">Mention légal</a>
+                            <a class="text-reset text-decoration-none" href="?controller=global&method=mentionLegal">Mentions légales</a>
                         </li>
                         <li>
                             <a class="text-reset text-decoration-none" href="#">Politique de confidentialité</a>
