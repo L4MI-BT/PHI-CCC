@@ -50,6 +50,23 @@ a {
   --bs-btn-disabled-border-color: #b4d499;
 }
 
+.btn-success-inverse {
+  --bs-btn-color: #fffdee;
+  --bs-btn-bg: #00684C ;
+  --bs-btn-border-color: #00684C;
+  --bs-btn-hover-color: #fffdee;
+  --bs-btn-hover-bg: #d8007e;
+  --bs-btn-hover-border-color: #d8007e;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fffdee;
+  --bs-btn-active-bg: variable.$vert-fonc;
+  --bs-btn-active-border-color: #d8007e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fffdee;
+  --bs-btn-disabled-bg: #00684C;
+  --bs-btn-disabled-border-color: #00684C;
+}
+
 .form-control:focus {
   color: #00684C;
   background-color: #fffdee;
@@ -1625,6 +1642,10 @@ body {
 
 .bas {
   color: #00684C;
+}
+
+.box-green {
+  background: #b4d499;
 }
 
 .bg-footer {
