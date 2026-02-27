@@ -482,7 +482,8 @@ a {
 
 .action-card-title {
   font-family: "impact";
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
