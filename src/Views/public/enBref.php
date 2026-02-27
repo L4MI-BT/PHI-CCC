@@ -233,6 +233,6 @@
     <h2>Rejoignez le mouvement</h2>
     <p >Bénévole, donateur ou partenaire — il existe de nombreuses façons de soutenir notre mission pour l'accès aux soins.</p>
     <a href="?controller=global&method=benevol" class="btn-cta-light">Devenir bénévole</a>
-    <a href="?controller=global&method=don" class="btn-cta-outline">Faire un don</a>
+    <a href="?controller=global&method=dons" class="btn-cta-outline">Faire un don</a>
   </div>
 </div>
