@@ -34,7 +34,7 @@
 <!-- INFO + GALLERY -->
 <section class="info-section">
   <div class="container">
-    <div class="row g-5 align-items-center">
+    <div class="row g-5 align-items-center position">
       <div class="col-lg-6">
         <div class="d-flex align-items-start gap-3">
           <img class="info-icon" src="./Asset/Images/TERRE.svg">

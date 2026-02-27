@@ -1,1 +1,0 @@
-<h1>Je suis le boutique</h1>
