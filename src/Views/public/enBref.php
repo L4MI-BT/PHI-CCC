@@ -185,7 +185,7 @@
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
         <div class="photo-block">
-            <img src="./Asset/Images/pdg.jpg" width= "60%">
+            <img src="./Asset/Images/pdg.jpg" width= "50%">
         </div>
       </div>
       <div class="col-lg-6">
