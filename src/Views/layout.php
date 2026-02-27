@@ -30,17 +30,12 @@
 
       <!-- Nav -->
       <ul class="nav-links">
-        <li class="mt-3">
+        <li class="mt-3 logo">
             <a class="nav-brand" href="?controller=global&method=index">
-        <?php if(isset($_SESSION['user'])){ ?>
-                    <a href="http://localhost/PHI-CCC/?controller=global&method=admin"><img src="./Asset/Images/logo.svg" width="100%"></a>
-                <?php }else{?>
-                    <a href="http://localhost/PHI-CCC/?controller=global&method=index"><img src="./Asset/Images/logo.svg" width="100%"></a>
-                <?php } ?>
-      </a>
+            <img src="./Asset/Images/logo.svg" width="100%"></a>
         </li>
         <li>
-          <a href="?controller=global&method=enBref">Qui sommes-nous ?</a>
+          <a href="?controller=global&method=enBref">Qui Sommes-Nous ?</a>
         </li>
 
                     <li tabindex="0">

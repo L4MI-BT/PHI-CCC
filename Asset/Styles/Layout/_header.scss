@@ -30,17 +30,14 @@
 
     /* ── LOGO ── */
     .nav-brand {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: #a39799 !important;
       text-decoration: none;
       display: flex;
       align-items: center;
       padding-right: 2rem;
       white-space: nowrap;
-      letter-spacing: -0.5px;
+      width: 200px;
     }
-    .nav-brand span { color: #111; }
+    
 
     /* ── NAV LINKS ── */
     .nav-links {
@@ -233,7 +230,7 @@
     .hero {
       background-image: url("../Images/BACKGROUND_2.png");
       background-position: 80%;
-      min-height: 600px;
+      min-height: 700px;
       display: flex;
       align-items: center;
       position: relative;
@@ -268,8 +265,15 @@
         h1, h2{
             color: #fffdee;
         }
-    }
+      }
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .nav-brand{
-        margin-top: 20px;
-    }
+
+
+    
+
+   
